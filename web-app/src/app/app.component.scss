@@ -1,0 +1,14 @@
+html, body {
+    background-color: black;
+    height: 100vh;
+    margin-bottom: 720px;
+}
+* {
+    overflow: hidden;
+    color: white;
+}
+#nav-placeholder {
+    display: block;
+    height: 96px;
+    width: 100%;
+}
