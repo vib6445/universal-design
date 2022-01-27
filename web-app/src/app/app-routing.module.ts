@@ -1,25 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { EventDetailPageComponent } from './event-detail-page/event-detail-page.component';
-import { EventsComponent } from './events/events.component';
-import { ExploreComponent } from './explore/explore.component';
-import { MapComponent } from './map/map.component';
-import { PersonalComponent } from './personal/personal.component';
-import { LoginComponent } from './login/login.component';
-import { AuthGuard } from './common/auth.guard';
-import { RegisterComponent } from './register/register.component';
+import { ApplicationComponent } from './application/application.component';
+import { ChallengeComponent } from './challenge/challenge.component';
+import { StartComponent } from './start/start.component';
+import { UniversalDesignComponent } from './universal-design/universal-design.component';
+// import {  } from './event-detail-page/event-detail-page.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
-  { path: 'explore', component: ExploreComponent, canActivate:[AuthGuard] },
-  { path: 'map', component: MapComponent, canActivate:[AuthGuard]  },
-  { path: 'events', component: EventsComponent, canActivate:[AuthGuard]  },
-  { path: 'profile', component: PersonalComponent, canActivate:[AuthGuard]  },
-  { path: 'explore/event-detail-page/:id', component: EventDetailPageComponent, canActivate:[AuthGuard]  },
-  { path: 'event-detail-page/:id', component: EventDetailPageComponent, canActivate:[AuthGuard]  },
-  { path: 'logout', component: LoginComponent },
-  { path: '**', redirectTo: 'explore' },
+  { path: 'start-the-journey', component: StartComponent },
+  { path: 'the-challenge', component: ChallengeComponent },
+  { path: 'universal-design-theory', component: UniversalDesignComponent },
+  { path: 'applying-universal-design', component: ApplicationComponent },
+  { path: '**', redirectTo: 'start-the-journey' },
 ];
 
 @NgModule({

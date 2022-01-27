@@ -8,7 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'web-app';
-  showApp: boolean = false ; // hidden by default
-  
+  title = 'Universal Design';
 }

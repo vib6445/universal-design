@@ -118,12 +118,11 @@ $my-custom-typography: mat.define-typography-config(
 
 // General styling
 html, body { 
-  min-height: 100%;
   margin: 0; 
   background-color: #111111;
-  min-height: 100vh;
   touch-action: manipulation;
   font-size: 18px;
+  color: white;
   
 }
 * {

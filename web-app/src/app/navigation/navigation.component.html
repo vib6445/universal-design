@@ -1,36 +1,21 @@
-<mat-toolbar>
-	<button mat-icon-button class="subpage" id="subpage" (click)="goBackInBrowserHistory()">
-		<mat-icon>arrow_back</mat-icon>
-	</button>
-	<span id="current-title">{{ current_title }}</span>
-	<span class="nav-spacer"></span>
-</mat-toolbar>
 
-
-<div id='titlebar-placeholder'></div>
-
-<div id="bottom-nav-wrapper">
+<nav id="bottom-nav-wrapper">
 	<ngx-bottom-nav>
-		<button ngx-bottom-nav label="Explore" routerLink="/explore" id="custom-styled-ngx-nav-button"
-			(click)="changeRoute('explore')" id="Explore">
-			<mat-icon ngxBottomNavIcon class="material-icons-outlined">category</mat-icon>
+		<button ngx-bottom-nav label="Start" routerLink="/start-the-journey" id="custom-styled-ngx-nav-button" id="start">
+			<mat-icon ngxBottomNavIcon class="material-icons-outlined">flight_takeoff</mat-icon>
 		</button>
 
-		<button ngx-bottom-nav label="Map" routerLink="/map" id="custom-styled-ngx-nav-button"
-			(click)="changeRoute('map')" id="Map">
+		<button ngx-bottom-nav label="The Challenge" routerLink="/the-challenge" id="custom-styled-ngx-nav-button" id="challenge">
 			<mat-icon ngxBottomNavIcon class="material-icons-outlined">explore</mat-icon>
 		</button>
 
-		<button ngx-bottom-nav label="My Events" routerLink="/events" id="custom-styled-ngx-nav-button"
-			(click)="changeRoute('events')" id="MyEvents">
-			<mat-icon [matBadge]="savedEventsCounter" matBadgeColor="accent"
-				[matBadgeHidden]="visibilitySavedEventsCounter" ngxBottomNavIcon class="material-icons-outlined">
-				local_activity</mat-icon>
+		<button ngx-bottom-nav label="Universal Design" routerLink="/universal-design-theory" id="custom-styled-ngx-nav-button" id="theory">
+			<mat-icon ngxBottomNavIcon class="material-icons-outlined">
+				accessibility_new</mat-icon>
 		</button>
 
-		<button ngx-bottom-nav label="Profile" routerLink="/profile" id="custom-styled-ngx-nav-button"
-			style="color: white" (click)="changeRoute('profile')" id="Profile">
-			<mat-icon ngxBottomNavIcon class="material-icons-outlined">account_circle</mat-icon>
+		<button ngx-bottom-nav label="The Application" routerLink="/applying-universal-design" id="custom-styled-ngx-nav-button" id="application">
+			<mat-icon ngxBottomNavIcon class="material-icons-outlined">verified</mat-icon>
 		</button>
 	</ngx-bottom-nav>
-</div>
+</nav>
